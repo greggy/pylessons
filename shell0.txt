@@ -1,0 +1,224 @@
+Python 2.7.9 (default, Mar  1 2015, 12:57:24) 
+[GCC 4.9.2] on linux2
+Type "copyright", "credits" or "license()" for more information.
+>>> 
+>>> 
+>>> 
+>>> 34 / 5
+6
+>>> 
+>>> 34 / 5.0
+6.8
+>>> 2 ** 12
+4096
+>>> 34 / 5
+6
+>>> copyright
+Copyright (c) 2001-2014 Python Software Foundation.
+All Rights Reserved.
+
+Copyright (c) 2000 BeOpen.com.
+All Rights Reserved.
+
+Copyright (c) 1995-2001 Corporation for National Research Initiatives.
+All Rights Reserved.
+
+Copyright (c) 1991-1995 Stichting Mathematisch Centrum, Amsterdam.
+All Rights Reserved.
+>>> 
+>>> 
+>>> clear
+
+Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    clear
+NameError: name 'clear' is not defined
+>>> clean
+
+Traceback (most recent call last):
+  File "<pyshell#12>", line 1, in <module>
+    clean
+NameError: name 'clean' is not defined
+>>> 
+>>> 
+>>> 
+>>> 34 + 7 * 9
+97
+>>> (34 + 7) * 9
+369
+>>> 
+>>> 
+>>> (34 + 7) * 9
+369
+>>> 
+>>> 
+>>> sum([1,4,9])
+14
+>>> help(sum)
+Help on built-in function sum in module __builtin__:
+
+sum(...)
+    sum(sequence[, start]) -> value
+    
+    Return the sum of a sequence of numbers (NOT strings) plus the value
+    of parameter 'start' (which defaults to 0).  When the sequence is
+    empty, return start.
+
+>>> 
+>>> 
+>>> [1,4,9]
+[1, 4, 9]
+>>> 
+>>> 
+>>> ================================ RESTART ================================
+>>> 
+Hello World
+>>> ================================ RESTART ================================
+>>> 
+Hello World
+>>> ================================ RESTART ================================
+>>> 
+Hello World
+850
+>>> 
+>>> 
+>>> a = 12
+>>> print(a)
+12
+>>> a
+12
+>>> help(print)
+SyntaxError: invalid syntax
+>>> sum?
+SyntaxError: invalid syntax
+>>> help(id)
+Help on built-in function id in module __builtin__:
+
+id(...)
+    id(object) -> integer
+    
+    Return the identity of an object.  This is guaranteed to be unique among
+    simultaneously existing objects.  (Hint: it's the object's memory address.)
+
+>>> a]
+SyntaxError: invalid syntax
+>>> a
+12
+>>> id(a)
+20009104
+>>> 2 ** 456
+186070713419675363980626894819329160794532188335953423432061490990243657757029868371504908982723472783555205531204141550984858016925351936L
+>>> 
+>>> 
+>>> a = 12
+>>> a = b
+
+Traceback (most recent call last):
+  File "<pyshell#45>", line 1, in <module>
+    a = b
+NameError: name 'b' is not defined
+>>> b = 56
+>>> a = b
+>>> a
+56
+>>> 
+>>> a
+56
+>>> type(a)
+<type 'int'>
+>>> d = 4.57
+>>> d
+4.57
+>>> type(d)
+<type 'float'>
+>>> a / d
+12.25382932166302
+>>> 
+>>> 
+>>> s = `test`
+
+Traceback (most recent call last):
+  File "<pyshell#58>", line 1, in <module>
+    s = `test`
+NameError: name 'test' is not defined
+>>> s = 'test"
+SyntaxError: EOL while scanning string literal
+>>> s = 'test'
+>>> s
+'test'
+>>> s * 5
+'testtesttesttesttest'
+>>> s = 'test '
+>>> s * 5
+'test test test test test '
+>>> s / 5
+
+Traceback (most recent call last):
+  File "<pyshell#65>", line 1, in <module>
+    s / 5
+TypeError: unsupported operand type(s) for /: 'str' and 'int'
+>>> 
+>>> 
+>>> s
+'test '
+>>> type(s)
+<type 'str'>
+>>> dir(s)
+['__add__', '__class__', '__contains__', '__delattr__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__getslice__', '__gt__', '__hash__', '__init__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '_formatter_field_name_split', '_formatter_parser', 'capitalize', 'center', 'count', 'decode', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'index', 'isalnum', 'isalpha', 'isdigit', 'islower', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+>>> s.upper()
+'TEST '
+>>> s.capitalize()
+'Test '
+>>> a
+56
+>>> dir(a)
+['__abs__', '__add__', '__and__', '__class__', '__cmp__', '__coerce__', '__delattr__', '__div__', '__divmod__', '__doc__', '__float__', '__floordiv__', '__format__', '__getattribute__', '__getnewargs__', '__hash__', '__hex__', '__index__', '__init__', '__int__', '__invert__', '__long__', '__lshift__', '__mod__', '__mul__', '__neg__', '__new__', '__nonzero__', '__oct__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdiv__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'bit_length', 'conjugate', 'denominator', 'imag', 'numerator', 'real']
+>>> 
+>>> s.upper
+<built-in method upper of str object at 0x7fcf29645840>
+>>> 
+>>> 
+>>> a = 56
+>>> b = 4.13
+>>> s
+'test '
+>>> 
+>>> a = c
+
+Traceback (most recent call last):
+  File "<pyshell#83>", line 1, in <module>
+    a = c
+NameError: name 'c' is not defined
+>>> c = 'Igor'
+>>> a = c
+>>> a
+'Igor'
+>>> c
+'Igor'
+>>> a == c
+True
+>>> 
+>>> 
+>>> import this
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+>>> 
