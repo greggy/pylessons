@@ -1,0 +1,304 @@
+>>> s = 'Python_is_a_very_popular_language!'
+>>> print (s)
+Python_is_a_very_popular_language!
+>>> print( s )
+Python_is_a_very_popular_language!
+>>> print( S )
+
+Traceback (most recent call last):
+  File "<pyshell#5>", line 1, in <module>
+    print( S )
+NameError: name 'S' is not defined
+>>> input('Who? ')
+Who? 'G'
+'G'
+>>> raw_input('Who? ')
+Who? reg
+'reg'
+>>> i = 0
+>>> for x in s:
+    if i % 2 == 0:
+        print(s[i])
+    i = i + 1
+
+    
+P
+t
+o
+_
+s
+a
+v
+r
+_
+o
+u
+a
+_
+a
+g
+a
+e
+>>> s
+'Python_is_a_very_popular_language!'
+>>> 0 % 2
+0
+>>> 1 % 2
+1
+>>> 2 % 2
+0
+>>> i = 0
+>>> A = 0
+>>> while i < len(s):
+    if i % 2 == 0:
+        print(s[i])
+    i += 1
+
+    
+P
+t
+o
+_
+s
+a
+v
+r
+_
+o
+u
+a
+_
+a
+g
+a
+e
+>>> len(s)
+34
+>>> for i, a in enumerate(s):
+    if i % 2 == 0:
+        print(s[i])
+
+        
+P
+t
+o
+_
+s
+a
+v
+r
+_
+o
+u
+a
+_
+a
+g
+a
+e
+>>> enumerate(s)
+<enumerate object at 0x7fb5fa10beb0>
+>>> [x for x in enumerate(s)]
+[(0, 'P'), (1, 'y'), (2, 't'), (3, 'h'), (4, 'o'), (5, 'n'), (6, '_'), (7, 'i'), (8, 's'), (9, '_'), (10, 'a'), (11, '_'), (12, 'v'), (13, 'e'), (14, 'r'), (15, 'y'), (16, '_'), (17, 'p'), (18, 'o'), (19, 'p'), (20, 'u'), (21, 'l'), (22, 'a'), (23, 'r'), (24, '_'), (25, 'l'), (26, 'a'), (27, 'n'), (28, 'g'), (29, 'u'), (30, 'a'), (31, 'g'), (32, 'e'), (33, '!')]
+>>> 
+>>> 
+>>> s[::2]
+'Pto_savr_oua_agae'
+>>> s[::3]
+'Ph__vyol_na!'
+>>> s[::-1]
+'!egaugnal_ralupop_yrev_a_si_nohtyP'
+>>> l = [1, 2, 3]
+>>> for s in l:
+    l.append(s*2)
+
+    
+
+Traceback (most recent call last):
+  File "<pyshell#42>", line 2, in <module>
+    l.append(s*2)
+TypeError: 'int' object is not callable
+c = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+for m in c:
+    c.append (m*2)
+print (c)
+>>> 
+>>> 
+>>> l = [1, 2, 3]
+>>> i = 0
+>>> for x in l:
+    l[i] = x*2
+    i += 1
+
+    
+>>> l
+[2, 4, 6]
+>>> 
+>>> 
+>>> range(10)
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> range(3, 10)
+[3, 4, 5, 6, 7, 8, 9]
+>>> xrange(3, 10)
+xrange(3, 10)
+>>> range(1, 11)
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> 
+>>> 
+>>> l = range(1, 11)
+>>> l
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> 
+>>> 
+>>> name = raw_input('Who are you?')
+Who are you?man
+>>> name = raw_input('Who are you? ')
+Who are you? man
+>>> name = 'man'
+>>> 'Test {0} or {1}'.format('qwert', 125)
+'Test qwert or 125'
+>>> a = 'qwerty'
+>>> 'Test {0} or {1}'.format(a, 125)
+'Test qwerty or 125'
+>>> 
+>>> 
+>>> ', '.join('qwerty')
+'q, w, e, r, t, y'
+>>> ' - '.join([str(i) for i in [1, 2, 3, 4]])
+'1 - 2 - 3 - 4'
+>>> ' / '.join([str(i) for i in [1, 2, 3, 4]])
+'1 / 2 / 3 / 4'
+>>> 
+>>> 
+>>> [str(i) for i in [1, 2, 3, 4]]
+['1', '2', '3', '4']
+>>> [i*2 for i in [1, 2, 3, 4]]
+[2, 4, 6, 8]
+>>> [i**2 for i in [1, 2, 3, 4]]
+[1, 4, 9, 16]
+>>> [i for i in [1, 2, 3, 4] if i % 2 == 0]
+[2, 4]
+>>> [i for i in [1, 2, 3, 4] if i % 2 == 0]
+[2, 4]
+>>> l = range(1, 11)
+>>> l
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> [i for i in l if i % 2 == 0]
+[2, 4, 6, 8, 10]
+>>> 
+>>> 
+>>> [x for x in l if i % 2 == 0]
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+>>> [x for x in l if x % 2 == 0]
+[2, 4, 6, 8, 10]
+>>> 
+>>> 
+>>> import math
+>>> math.pi
+3.141592653589793
+>>> math.sqrt(14)
+3.7416573867739413
+>>> math.sqrt(144)
+12.0
+>>> 
+>>> 
+>>> from math import sqrt
+>>> sqrt(1223)
+34.97141690009142
+>>> 
+>>> 
+>>> dir(math)
+['__doc__', '__name__', '__package__', 'acos', 'acosh', 'asin', 'asinh', 'atan', 'atan2', 'atanh', 'ceil', 'copysign', 'cos', 'cosh', 'degrees', 'e', 'erf', 'erfc', 'exp', 'expm1', 'fabs', 'factorial', 'floor', 'fmod', 'frexp', 'fsum', 'gamma', 'hypot', 'isinf', 'isnan', 'ldexp', 'lgamma', 'log', 'log10', 'log1p', 'modf', 'pi', 'pow', 'radians', 'sin', 'sinh', 'sqrt', 'tan', 'tanh', 'trunc']
+>>> 
+>>> 
+>>> import os
+>>> os.cd('/home/greg/pylessons')
+
+Traceback (most recent call last):
+  File "<pyshell#106>", line 1, in <module>
+    os.cd('/home/greg/pylessons')
+AttributeError: 'module' object has no attribute 'cd'
+>>> os.cmd('cd /home/greg/pylessons')
+
+Traceback (most recent call last):
+  File "<pyshell#107>", line 1, in <module>
+    os.cmd('cd /home/greg/pylessons')
+AttributeError: 'module' object has no attribute 'cmd'
+>>> dir(os)
+['EX_CANTCREAT', 'EX_CONFIG', 'EX_DATAERR', 'EX_IOERR', 'EX_NOHOST', 'EX_NOINPUT', 'EX_NOPERM', 'EX_NOUSER', 'EX_OK', 'EX_OSERR', 'EX_OSFILE', 'EX_PROTOCOL', 'EX_SOFTWARE', 'EX_TEMPFAIL', 'EX_UNAVAILABLE', 'EX_USAGE', 'F_OK', 'NGROUPS_MAX', 'O_APPEND', 'O_ASYNC', 'O_CREAT', 'O_DIRECT', 'O_DIRECTORY', 'O_DSYNC', 'O_EXCL', 'O_LARGEFILE', 'O_NDELAY', 'O_NOATIME', 'O_NOCTTY', 'O_NOFOLLOW', 'O_NONBLOCK', 'O_RDONLY', 'O_RDWR', 'O_RSYNC', 'O_SYNC', 'O_TRUNC', 'O_WRONLY', 'P_NOWAIT', 'P_NOWAITO', 'P_WAIT', 'R_OK', 'SEEK_CUR', 'SEEK_END', 'SEEK_SET', 'ST_APPEND', 'ST_MANDLOCK', 'ST_NOATIME', 'ST_NODEV', 'ST_NODIRATIME', 'ST_NOEXEC', 'ST_NOSUID', 'ST_RDONLY', 'ST_RELATIME', 'ST_SYNCHRONOUS', 'ST_WRITE', 'TMP_MAX', 'UserDict', 'WCONTINUED', 'WCOREDUMP', 'WEXITSTATUS', 'WIFCONTINUED', 'WIFEXITED', 'WIFSIGNALED', 'WIFSTOPPED', 'WNOHANG', 'WSTOPSIG', 'WTERMSIG', 'WUNTRACED', 'W_OK', 'X_OK', '_Environ', '__all__', '__builtins__', '__doc__', '__file__', '__name__', '__package__', '_copy_reg', '_execvpe', '_exists', '_exit', '_get_exports_list', '_make_stat_result', '_make_statvfs_result', '_pickle_stat_result', '_pickle_statvfs_result', '_spawnvef', 'abort', 'access', 'altsep', 'chdir', 'chmod', 'chown', 'chroot', 'close', 'closerange', 'confstr', 'confstr_names', 'ctermid', 'curdir', 'defpath', 'devnull', 'dup', 'dup2', 'environ', 'errno', 'error', 'execl', 'execle', 'execlp', 'execlpe', 'execv', 'execve', 'execvp', 'execvpe', 'extsep', 'fchdir', 'fchmod', 'fchown', 'fdatasync', 'fdopen', 'fork', 'forkpty', 'fpathconf', 'fstat', 'fstatvfs', 'fsync', 'ftruncate', 'getcwd', 'getcwdu', 'getegid', 'getenv', 'geteuid', 'getgid', 'getgroups', 'getloadavg', 'getlogin', 'getpgid', 'getpgrp', 'getpid', 'getppid', 'getresgid', 'getresuid', 'getsid', 'getuid', 'initgroups', 'isatty', 'kill', 'killpg', 'lchown', 'linesep', 'link', 'listdir', 'lseek', 'lstat', 'major', 'makedev', 'makedirs', 'minor', 'mkdir', 'mkfifo', 'mknod', 'name', 'nice', 'open', 'openpty', 'pardir', 'path', 'pathconf', 'pathconf_names', 'pathsep', 'pipe', 'popen', 'popen2', 'popen3', 'popen4', 'putenv', 'read', 'readlink', 'remove', 'removedirs', 'rename', 'renames', 'rmdir', 'sep', 'setegid', 'seteuid', 'setgid', 'setgroups', 'setpgid', 'setpgrp', 'setregid', 'setresgid', 'setresuid', 'setreuid', 'setsid', 'setuid', 'spawnl', 'spawnle', 'spawnlp', 'spawnlpe', 'spawnv', 'spawnve', 'spawnvp', 'spawnvpe', 'stat', 'stat_float_times', 'stat_result', 'statvfs', 'statvfs_result', 'strerror', 'symlink', 'sys', 'sysconf', 'sysconf_names', 'system', 'tcgetpgrp', 'tcsetpgrp', 'tempnam', 'times', 'tmpfile', 'tmpnam', 'ttyname', 'umask', 'uname', 'unlink', 'unsetenv', 'urandom', 'utime', 'wait', 'wait3', 'wait4', 'waitpid', 'walk', 'write']
+>>> os.chdir('/home/greg/pylessons')
+>>> f = open('emails.txt')
+>>> print(f.readline())
+Валентина val_ruzav2110@mail.ru
+
+>>> print(f.readline())
+Володя voldimor0@mail.ru
+
+>>> print(f.readline())
+Наталья natasig25@gmail.com
+
+>>> f = open('emails.txt')
+>>> print(f.readlines())
+['\xd0\x92\xd0\xb0\xd0\xbb\xd0\xb5\xd0\xbd\xd1\x82\xd0\xb8\xd0\xbd\xd0\xb0 val_ruzav2110@mail.ru\n', '\xd0\x92\xd0\xbe\xd0\xbb\xd0\xbe\xd0\xb4\xd1\x8f voldimor0@mail.ru\n', '\xd0\x9d\xd0\xb0\xd1\x82\xd0\xb0\xd0\xbb\xd1\x8c\xd1\x8f natasig25@gmail.com\n', '\xd0\x90\xd0\xbd\xd0\xb4\xd1\x80\xd0\xb5\xd0\xb9 belitsky.a@gmail.com\n', '\xd0\x98\xd0\xb3\xd0\xbe\xd1\x80\xd1\x8c gusevrk@yandex.ru\n', '\xd0\xad\xd1\x80\xd0\xb5\xd0\xbd\xd1\x82\xd1\x81\xd0\xb5\xd0\xbd olegdolyaev2@mail.ru\n', '\xd0\x9f\xd0\xb0\xd1\x88\xd0\xb0 vorobjevpavel@gmail.com\n', '\xd0\xa1\xd0\xb0\xd1\x88\xd0\xb0 alien-sad@mail.ru\n', '\xd0\xa1\xd0\xbe\xd1\x84\xd0\xb8 1188539@gmail.com\n']
+>>> [l.decode('utf-8') for l in print(f.readlines())]
+SyntaxError: invalid syntax
+>>> [l.decode('utf-8') for l in f.readlines()]
+[]
+>>> f = open('emails.txt')
+\
+>>> [l.decode('utf-8') for l in f.readlines()]
+[u'\u0412\u0430\u043b\u0435\u043d\u0442\u0438\u043d\u0430 val_ruzav2110@mail.ru\n', u'\u0412\u043e\u043b\u043e\u0434\u044f voldimor0@mail.ru\n', u'\u041d\u0430\u0442\u0430\u043b\u044c\u044f natasig25@gmail.com\n', u'\u0410\u043d\u0434\u0440\u0435\u0439 belitsky.a@gmail.com\n', u'\u0418\u0433\u043e\u0440\u044c gusevrk@yandex.ru\n', u'\u042d\u0440\u0435\u043d\u0442\u0441\u0435\u043d olegdolyaev2@mail.ru\n', u'\u041f\u0430\u0448\u0430 vorobjevpavel@gmail.com\n', u'\u0421\u0430\u0448\u0430 alien-sad@mail.ru\n', u'\u0421\u043e\u0444\u0438 1188539@gmail.com\n']
+>>> 
+>>> 
+>>> 12 * 45
+540
+\
+>>> 12 * 45 + 125
+665
+>>> 12 * (45 + 125)
+2040
+>>> 121 > 45
+True
+>>> 121 > 45 > 12
+True
+>>> 121 > 45 < 12
+False
+>>> True == 1
+True
+>>> False == 0
+True
+>>> True is 1
+False
+>>> 121 > 45 and 45 > 12
+True
+>>> 121 > 45 or 45 > 12
+True
+>>> 121 > 45 or 45 < 12
+True
+>>> 121 < 45 or 45 > 12
+True
+>>> 121 > 45 and 45 < 12
+False
+>>> 121 < 45 or 45 > 12
+True
+>>> 1.12
+1.12
+>>> 
+>>> 
+>>> 0.1 + 0.1 + 0.1 - 0.3
+5.551115123125783e-17
+>>> 
+>>> 
+>>> 
+>>> from decimal import Decimal
+>>> Decimal('0.1') + Decimal('0.1') + Decimal('0.1') - Decimal('0.3')
+Decimal('0.0')
+>>> Decimal('1') / Decimal('7')
+Decimal('0.1428571428571428571428571429')
+>>> from decimal import Decimal, getcontext
+>>> getcontext().prec
+28
+>>> getcontext().prec = 2
+>>> Decimal('1') / Decimal('7')
+Decimal('0.14')
+>>> 
