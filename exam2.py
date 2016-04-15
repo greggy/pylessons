@@ -75,6 +75,6 @@ False во всех других случаях.
 from random import randint
 
 for _ in range(100):
-    l =  [randint(1, 10) for _ in range(4, 6)]
+    l =  [randint(1, 10) for _ in range(2, 7)]
     "Here will be your code"
 
