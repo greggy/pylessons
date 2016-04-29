@@ -1,0 +1,301 @@
+>>> l1 = [84, 25, 56, 55, 57, 41, 39, 77, 23, 45, 56, 23, 75, 45, 39, 9, 93, 80, 94, 49, 70, 86, 90, 60, 27, 20, 23, 82, 40, 81, 20, 74, 34, 40, 30]
+>>> list(enumerate(l1))
+[(0, 84), (1, 25), (2, 56), (3, 55), (4, 57), (5, 41), (6, 39), (7, 77), (8, 23), (9, 45), (10, 56), (11, 23), (12, 75), (13, 45), (14, 39), (15, 9), (16, 93), (17, 80), (18, 94), (19, 49), (20, 70), (21, 86), (22, 90), (23, 60), (24, 27), (25, 20), (26, 23), (27, 82), (28, 40), (29, 81), (30, 20), (31, 74), (32, 34), (33, 40), (34, 30)]
+>>> for i, e enumerate(l1):
+  File "<stdin>", line 1
+    for i, e enumerate(l1):
+                     ^
+SyntaxError: invalid syntax
+>>> for i, e enumerate(l1):
+  File "<stdin>", line 1
+    for i, e enumerate(l1):
+                     ^
+SyntaxError: invalid syntax
+>>> for i, e enumerate(l1): if i % 3 == 0: l1[i] = e**2
+  File "<stdin>", line 1
+    for i, e enumerate(l1): if i % 3 == 0: l1[i] = e**2
+                     ^
+SyntaxError: invalid syntax
+>>> 
+>>> 
+>>> 1 / 3.0
+0.3333333333333333
+>>> 
+>>> '%.03f' % (1 / 3.0)
+'0.333'
+>>> '%.03f' % (1 / 2.0)
+'0.500'
+>>> 1 / 2.0
+0.5
+>>> 
+>>> 
+>>> '{0:08b}'.format(124)
+'01111100'
+>>> 
+>>> '{0:08b}.{1:08b}.{2:08b}.{3:08b}'.format(124, 25, 14, 10)
+'01111100.00011001.00001110.00001010'
+>>> 
+>>> 
+>>> '{0:>10s}'.format('#')
+'         #'
+>>> ''.join(['{0:>6s}\n'format('#'*n) for n in range(1, 7)])
+  File "<stdin>", line 1
+    ''.join(['{0:>6s}\n'format('#'*n) for n in range(1, 7)])
+                             ^
+SyntaxError: invalid syntax
+>>> ''.join(['{0:>6s}\n'.format('#'*n) for n in range(1, 7)])
+'     #\n    ##\n   ###\n  ####\n #####\n######\n'
+>>> print(''.join(['{0:>6s}\n'.format('#'*n) for n in range(1, 7)]))
+     #
+    ##
+   ###
+  ####
+ #####
+######
+
+>>> print(''.join(['{0:<6s}\n'.format('#'*n) for n in range(1, 7)]))
+#     
+##    
+###   
+####  
+##### 
+######
+
+>>> print(''.join(['{0:^6s}\n'.format('#'*n) for n in range(1, 7)]))
+  #   
+  ##  
+ ###  
+ #### 
+##### 
+######
+
+>>> 
+>>> 
+>>> []
+[]
+>>> l2 = []
+>>> l2.append(3)
+>>> l2
+[3]
+>>> l2.append(4)
+>>> l2
+[3, 4]
+>>> l2.pop()
+4
+>>> l2
+[3]
+>>> l2.append(4)
+>>> l2.pop(0)
+3
+>>> l2
+[4]
+>>> help(l2.insert)
+Help on built-in function insert:
+
+insert(...)
+    L.insert(index, object) -- insert object before index
+
+>>> l2.insert(0, 'spam')
+>>> l2
+['spam', 4]
+>>> l2.insert(0, [3, 1, 5])
+>>> l2
+[[3, 1, 5], 'spam', 4]
+>>> l2[0]
+[3, 1, 5]
+>>> l2[0][1]
+1
+>>> 
+>>> 
+>>> del l2[2]
+>>> ls
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'ls' is not defined
+>>> l2
+[[3, 1, 5], 'spam']
+>>> 
+>>> 
+>>> l2[:2]
+[[3, 1, 5]]
+>>> l2[:2]
+[[3, 1, 5], 'spam']
+>>> 
+>>> 
+>>> l2
+[[3, 1, 5], 'spam']
+>>> l3 = l2
+>>> l2.append(9)
+>>> l2
+[[3, 1, 5], 'spam', 9]
+>>> l3
+[[3, 1, 5], 'spam', 9]
+>>> 
+>>> 
+>>> l4 = l2[:]
+>>> l4
+[[3, 1, 5], 'spam', 9]
+>>> l4 = l2
+>>> l4 = l2[:]
+>>> l4 == l2
+True
+>>> l4[0] = {}
+>>> l4
+[{}, 'spam', 9]
+>>> l2
+[[3, 1, 5], 'spam', 9]
+>>> l3
+[[3, 1, 5], 'spam', 9]
+>>> l3.append('test')
+>>> l2
+[[3, 1, 5], 'spam', 9, 'test']
+>>> l3
+[[3, 1, 5], 'spam', 9, 'test']
+>>> l4
+[{}, 'spam', 9]
+>>> l2 is l3
+True
+>>> l2 is l4
+False
+>>> d1 = {'apple': 3, 'orange': 5, 'banana': 6}
+>>> d1.keys()
+['orange', 'apple', 'banana']
+>>> d2.values()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'd2' is not defined
+>>> d1.values()
+[5, 3, 6]
+>>> 
+>>> 
+>>> for x in d1: print(x, d1[x])
+... 
+('orange', 5)
+('apple', 3)
+('banana', 6)
+>>> l2
+[[3, 1, 5], 'spam', 9, 'test']
+>>> l2[99]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list index out of range
+>>> l2[99] = 1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: list assignment index out of range
+>>> d1['carrot'] = 18
+>>> d1
+{'orange': 5, 'carrot': 18, 'apple': 3, 'banana': 6}
+>>> 
+>>> 
+>>> d1.update({'potato': 10})
+>>> d1
+{'orange': 5, 'carrot': 18, 'potato': 10, 'apple': 3, 'banana': 6}
+>>> d1.update({'potato': 10, '12': 'test'})
+>>> d1
+{'carrot': 18, 'apple': 3, 'potato': 10, 'orange': 5, '12': 'test', 'banana': 6}
+>>> d1['apple'] = 2
+>>> d1
+{'carrot': 18, 'apple': 2, 'potato': 10, 'orange': 5, '12': 'test', 'banana': 6}
+>>> 
+>>> 
+>>> d1['12'] = l2
+>>> d1
+{'carrot': 18, 'apple': 2, 'potato': 10, 'orange': 5, '12': [[3, 1, 5], 'spam', 9, 'test'], 'banana': 6}
+>>> d1['12']
+[[3, 1, 5], 'spam', 9, 'test']
+>>> d1['12'][0]
+[3, 1, 5]
+>>> d1['12'][0][1]
+1
+>>> d1[0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 0
+>>> d1['12']
+[[3, 1, 5], 'spam', 9, 'test']
+>>> l2 + []
+[[3, 1, 5], 'spam', 9, 'test']
+>>> d['test'] = 2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'd' is not defined
+>>> d1['test'] = 2
+>>> d1
+{'test': 2, 'carrot': 18, 'apple': 2, 'potato': 10, 'orange': 5, '12': [[3, 1, 5], 'spam', 9, 'test'], 'banana': 6}
+>>> 
+>>> 
+>>> t1 = (3, 2, 3, 3)
+>>> t1[1]
+2
+>>> t1[:2]
+(3, 2)
+>>> t1 = ('test',) + t1[1:]
+>>> t1
+('test', 2, 3, 3)
+>>> 
+>>> 
+>>> t1[1:]
+(2, 3, 3)
+>>> t1
+('test', 2, 3, 3)
+>>> t1[1:]
+(2, 3, 3)
+>>> 
+>>> 
+>>> import os
+>>> os.chdir('/home/greg/pylessons')
+>>> f = open('datafile.txt', 'r')
+>>> dir(f)
+['__class__', '__delattr__', '__doc__', '__enter__', '__exit__', '__format__', '__getattribute__', '__hash__', '__init__', '__iter__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'close', 'closed', 'encoding', 'errors', 'fileno', 'flush', 'isatty', 'mode', 'name', 'newlines', 'next', 'read', 'readinto', 'readline', 'readlines', 'seek', 'softspace', 'tell', 'truncate', 'write', 'writelines', 'xreadlines']
+>>> f.read()
+"John Higgins 128 2234\nMark Selby 147 4523\nRonnie O'Sullivan 147 2539\nAli Carter 143 1256\nMark Allen 118 3256\nShon Murphy 135 3245\n\n"
+>>> f = open('datafile.txt', 'r')
+>>> print(f.read())
+John Higgins 128 2234
+Mark Selby 147 4523
+Ronnie O'Sullivan 147 2539
+Ali Carter 143 1256
+Mark Allen 118 3256
+Shon Murphy 135 3245
+
+
+>>> f = open('datafile.txt', 'r')
+>>> ]print(f.readline())
+John Higgins 128 2234
+
+>>> print(f.readline())
+Mark Selby 147 4523
+
+>>> print(f.readline())
+Ronnie O'Sullivan 147 2539
+
+>>> ]print(f.readline())
+  File "<stdin>", line 1
+    ]print(f.readline())
+    ^
+SyntaxError: invalid syntax
+>>> for l in open('datafile.txt', 'r'): print(l)
+... 
+John Higgins 128 2234
+
+Mark Selby 147 4523
+
+Ronnie O'Sullivan 147 2539
+
+Ali Carter 143 1256
+
+Mark Allen 118 3256
+
+Shon Murphy 135 3245
+
+
+
+>>> f = open('datafile.txt', 'a+')
+>>> f.write('hello world\n')
+>>> f.close()
+>>> f = open('datafile.txt', 'r')
+>>> print(f.readlines())
+['John Higgins 128 2234\n', 'Mark Selby 147 4523\n', "Ronnie O'Sullivan 147 2539\n", 'Ali Carter 143 1256\n', 'Mark Allen 118 3256\n', 'Shon Murphy 135 3245\n', '\n', 'hello world\n']
+>>> f = open('datafile.txt', 'r')
+>>> 
