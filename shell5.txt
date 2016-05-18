@@ -1,0 +1,177 @@
+>>> 3 + 2
+5
+>>> a = 4
+>>> 
+>>> 
+>>> if (a > b) {}
+  File "<stdin>", line 1
+    if (a > b) {}
+               ^
+SyntaxError: invalid syntax
+>>> 
+>>> 
+>>> b = 6
+>>> from math import *
+>>> 
+>>> 
+>>> a = 3
+>>> 
+>>> d, c, g = 1, 3, 6
+>>> d, c, g
+(1, 3, 6)
+>>> 
+>>> 
+>>> l1 = ['spam', 'ham']
+>>> d, j = l1
+>>> d
+'spam'
+>>> j
+'ham'
+>>> a, b, c = j
+>>> a, b, c
+('h', 'a', 'm')
+>>> 
+>>> 
+>>> a = 5
+>>> b = a
+>>> a = b = 5
+>>> S = 4
+>>> s = 6
+>>> S, s
+(4, 6)
+>>> 
+>>> 
+>>> i = i + 1
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'i' is not defined
+>>> i = 0
+>>> i = i + 1
+>>> i += 1
+>>> i
+2
+>>> 
+>>> i **= 2
+>>> i
+4
+>>> i = i + 5 
+>>> i += 5
+>>> 
+>>> 
+>>> l1
+['spam', 'ham']
+>>> l1.append('stop')
+>>> print(l1.append(23))
+None
+>>> l1
+['spam', 'ham', 'stop', 23]
+>>> print(l1.extend([47, 676]))
+None
+>>> l1.sort()
+>>> l1
+[23, 47, 676, 'ham', 'spam', 'stop']
+>>> 
+>>> 
+>>> l1 + []
+[23, 47, 676, 'ham', 'spam', 'stop']
+>>> l1 += [56, 'doom']
+>>> l1
+[23, 47, 676, 'ham', 'spam', 'stop', 56, 'doom']
+>>> 
+>>> 
+>>> a, b
+(5, 5)
+>>> a = 3
+>>> a, b
+(3, 5)
+>>> c = a
+>>> 
+>>> 
+>>> a, b = b, a
+>>> a, b
+(5, 3)
+>>> 
+>>> 
+>>> l2 = [1, 2, 3, 4]
+>>> while l2:
+...   f, l2 = l2[0], l2[1:]
+...   print(f, l2)
+... 
+(1, [2, 3, 4])
+(2, [3, 4])
+(3, [4])
+(4, [])
+>>> 
+>>> 
+>>> True, False
+(True, False)
+>>> 
+>>> 
+>>> l2
+[]
+>>> l2 == True
+False
+>>> {} == False
+False
+>>> ''
+''
+>>> '1' == True
+False
+>>> 'AD' == True
+False
+>>> 'AD' == True
+False
+>>> 
+>>> 
+>>> 
+>>> for = 5
+  File "<stdin>", line 1
+    for = 5
+        ^
+SyntaxError: invalid syntax
+>>> 
+>>> 
+>>> list('spam')
+['s', 'p', 'a', 'm']
+>>> list = 'a'
+>>> list('spam')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object is not callable
+>>> 
+>>> 
+>>> Which number? > rt
+Please, enter only numbers!
+Which number? > t
+Please, enter only numbers!
+Which number? > 56
+3136
+Which number? > stop
+Buy!
+>>> Which number? > er
+Please, enter only numbers!
+Which number? > as
+Please, enter only numbers!
+Which number? > 45
+2025
+Which number? > 34
+1156
+Which number? > stop
+Buy!
+>>> int('s')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: 's'
+>>> 
+>>> 
+>>> bool('AD')
+True
+>>> bool('')
+False
+>>> 
+>>> 
+>>> bool({})
+False
+>>> bool({1: 2})
+True
+>>> 
