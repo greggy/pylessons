@@ -1,6 +1,12 @@
-a = 75
+mylist = [28, 95, 67, 13]
 test = 'Test string variable'
-#b = a * 3
+#b = mylist * 3
 
-print(a)
+print(mylist)
 print(test)
+
+for el in mylist:
+    print(el)
+    if el > 66:
+        print(el.bit_length)
+

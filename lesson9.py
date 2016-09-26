@@ -1,25 +1,97 @@
-seq1 = 'SPAM'
-seq2 = 'SRAM'
+x = 95
+def fun1():
+    print(x)
 
-seq3 = [1, 2, 3]
-seq4 = (2, 3, 4)
+#fun1()
 
 
-def fun1(x, y):
-    res = []
-    for a in x:
-        if a in y:
-            res.append(a)
-    return res
+y = 64
+def fun2():
+    y = 'Test'
+    print(y)
 
-a = fun1(seq1, seq2)
-print(a)
+fun2()
+#print(y)
 
-b = fun1(seq3, seq4)
-print(b)
 
-c = fun1
+z = 90
+def fun3():
+    global z
+    z = 81
 
-d = c(seq1, seq2)
-print d
-x
+#print(z)
+#fun3()
+#print(z)
+
+
+g = 0
+def fun4():
+    global g
+    g = g + 3
+    #print(g)
+
+#fun3()
+fun4()
+#print(g)
+fun4()
+#print(g)
+
+
+a = 88
+def fun5():
+    a = 99
+    def fun():
+        print(a)
+        def f1():
+            a = 'Fom'
+            print(a)
+        f1()
+    fun()
+
+#fun5()
+
+
+def maker(n):
+    def fun(m):
+        return m ** n
+    return fun
+
+f = maker(2)
+#print(f)
+#print(f(4))
+#print(f(5))
+
+g = maker(3)
+#print(g(2))
+
+
+def fun6():
+    x = 66
+    def fun(x=x):
+        print(x)
+    fun()
+
+#fun6()
+
+
+def fun7():
+    x = 3
+    y = 5
+    act = lambda n, m: x ** n + y - m
+    return act
+
+h = fun7()
+#print(h(5, 7))
+
+
+def fun8():
+    acts = []
+    for i in range(5):
+        acts.append(lambda x, i=i: i ** x)
+    return acts
+
+d = fun8()
+print(d[0])
+print(d[2](3))
+print(d[0](56))
+print(d[4](3))
