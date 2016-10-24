@@ -58,21 +58,21 @@ mycalc('/', [81, 9]) # 9
 И оформите код в функцию (или несколько функций).
 """
 people = [{'name': 'Маша', 'height': 160},
-          {' name ': 'Саша', ' height ': 80},
-          {'name': 'Паша'}, {' name': 'Вася', 'height ': 175}]
+          {'name': 'Саша', 'height': 80},
+          {'name': 'Паша'}, {'name': 'Вася', 'height': 174}]
 
 height_total = 0
 height_count = 0
 for person in people:
-    if 'рост' in person:
-        height_total += person[' рост ']
+    if person.get('height'):
+        height_total += person['height']
         height_count += 1
 
 if height_count > 0:
     average_height = height_total / height_count
 
     print average_height
-    # => 120
+    # => 138
 
 # --------------------------------------------------
 # Задача 6
